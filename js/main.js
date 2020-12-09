@@ -174,7 +174,7 @@ function renderCanvas(grid, ctx) {
 					// Tally number of cells that make up each state
 					states[newCell].count += 1;
 
-					if (states[newCell].centroid.x.length > Settings.damping) {
+					if (states[newCell].centroid.y.length > Settings.damping) {
 						states[newCell].centroid.x.shift();
 						states[newCell].centroid.y.shift();
 					} else {
